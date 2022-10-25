@@ -86,7 +86,6 @@ export function initGamePage(params) {
 
    function listenerHandRock() {
       if (typeRock == "hand-rock") {
-         console.log("soy roca",handsRock);
          state.setMove("piedra");
          handRockActive("piedra")
       }
@@ -97,7 +96,6 @@ export function initGamePage(params) {
 
    function listenerHandPaper() {
       if (typePaper == "hand-paper") {
-         console.log("soy papel",handsPaper);
          state.setMove("papel");
          handRockActive("papel")
       }
@@ -109,7 +107,6 @@ export function initGamePage(params) {
 
    function listenerHandScissors() {
       if (typeScissors == "hand-scissors") {
-         console.log("soy tijera",handsScissors);
          state.setMove("tijera");
          handRockActive("tijera")
       }
@@ -199,9 +196,7 @@ export function initGamePage(params) {
 
    
    function computerMove() {
-   console.log("me ejecuto otra vez?");
 
-   console.log("estado actual",state.getState());
 
       const computerRandomMove = state.getState().currentGame.computerPlay;
       if (computerRandomMove == "piedra") {
@@ -229,7 +224,6 @@ export function initGamePage(params) {
       }
       if (computerRandomMove == "papel") {
          setTimeout(() => {
-            console.log("computer move", computerRandomMove);
                
             const contadorComponent = div.querySelector('.contador-component')!;
             const styleComponent:any = contadorComponent.shadowRoot?.children[0]!
@@ -257,7 +251,6 @@ export function initGamePage(params) {
 
       if (computerRandomMove == "tijera") {
          setTimeout(() => {
-            console.log("computer move", computerRandomMove);
                
             const contadorComponent = div.querySelector('.contador-component')!;
             const styleComponent:any = contadorComponent.shadowRoot?.children[0]!

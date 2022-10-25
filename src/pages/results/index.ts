@@ -8,7 +8,6 @@ export function initResultsPage(params) {
    const currenStatePlayerComputer = currentState.history.computer;
    const stateWhoWins = state.whoWins();
 
-   console.log(stateWhoWins);
    if (stateWhoWins == "ganaste") {
       style.textContent = `
       .content-result-text{
