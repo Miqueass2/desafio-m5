@@ -24,7 +24,7 @@ const route = [{
 export function initRouter(container: Element) {
    
    function isGithubPages() {
-      return location.host.includes("github.io");
+      return location.host.includes("miqueass2.github.io");
    }
 
    function goTo(path) {
