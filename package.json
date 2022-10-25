@@ -1,0 +1,17 @@
+{
+  "name": "dwf-desafio-final",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "parcel": "^2.7.0"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html --port 4040",
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /desafio-m5",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
