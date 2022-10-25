@@ -109,14 +109,14 @@ export function initResultsPage(params) {
       
       const playAgainButton = div.querySelector('.button');
       playAgainButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/play");
+         params.goTo("/play");
       });
 
 
       //AL SALIR SE REINICIA LOS PUNTOS A 0 
       const outOfGameButton = div.querySelector('.salir');
       outOfGameButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/welcome");
+         params.goTo("/welcome");
          
          state.setState({
             ...currentState,
@@ -234,12 +234,12 @@ export function initResultsPage(params) {
 
       const playAgainButton = div.querySelector('.button');
       playAgainButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/play");
+         params.goTo("/play");
       });
 
       const outOfGameButton = div.querySelector('.salir');
       outOfGameButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/welcome");
+         params.goTo("/welcome");
          state.setState({
             ...currentState,
             history: {
@@ -354,12 +354,12 @@ export function initResultsPage(params) {
 
       const playAgainButton = div.querySelector('.button');
       playAgainButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/play");
+         params.goTo("/play");
       });
 
       const outOfGameButton = div.querySelector('.salir');
       outOfGameButton?.addEventListener('click', () => {
-         params.goTo("/desafio-m5/welcome");
+         params.goTo("/welcome");
          state.setState({
             ...currentState,
             history: {

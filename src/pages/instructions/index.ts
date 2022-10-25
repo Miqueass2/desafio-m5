@@ -12,7 +12,7 @@ export function initInstructionsPage(params) {
    const buttonGoPlay = div.querySelector('.buttonGoPlay');
    buttonGoPlay?.addEventListener('click', (e) => {
       e.preventDefault();
-      params.goTo("/desafio-m5/play")
+      params.goTo("/play")
    });
    return div
 }

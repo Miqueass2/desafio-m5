@@ -63,7 +63,7 @@ export function initGamePage(params) {
       }
       if (counterGeneral < -1) {
          
-         params.goTo("/desafio-m5/instructions")
+         params.goTo("/instructions")
          clearInterval(stopCounter);
          
       }
@@ -218,7 +218,7 @@ export function initGamePage(params) {
             handRockComputer.classList.add('computer-relocation');
             
             setTimeout(() => {
-               params.goTo("/desafio-m5/results")
+               params.goTo("/results")
                }, 1650);
          }, 1500)
       }
@@ -243,7 +243,7 @@ export function initGamePage(params) {
             handPaperComputer.classList.add('computer-relocation');
             
             setTimeout(() => {
-               params.goTo("/desafio-m5/results")
+               params.goTo("/results")
             },1650)
 
          }, 1500);
@@ -270,7 +270,7 @@ export function initGamePage(params) {
             handsScissors.classList.add('computer-relocation');
 
             setTimeout(() => {
-               params.goTo("/desafio-m5/results")
+               params.goTo("/results")
             },1650)
             
          }, 1500);

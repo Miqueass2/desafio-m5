@@ -9,7 +9,7 @@ export function initHomePage(params) {
    const buttonEl = div.querySelector(".buttonEl") as HTMLButtonElement;
    buttonEl.addEventListener('click', (e) => {
       e.preventDefault();
-      params.goTo("/desafio-m5/instructions")
+      params.goTo("/instructions")
    })
    return div
 }

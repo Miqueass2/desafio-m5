@@ -48,8 +48,8 @@ export function initRouter(container: Element) {
          }
       }
    }
-   if (location.pathname == '/' || location.pathname== "/desafio-m5") {
-      goTo("/desafio-m5/welcome")
+   if (location.pathname == '/' || location.pathname== "/desafio-m5/") {
+      goTo("/welcome")
    } else {
          handleRoute(location.pathname);
       }
