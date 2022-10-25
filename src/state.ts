@@ -78,7 +78,6 @@ export const state = {
             }
          });
       }
-      console.log("soy wins",currentStateWins);
    },
    whoWins():Results {
       const currentState = this.getState();
