@@ -4,19 +4,19 @@ import { initGamePage } from "./pages/play";
 import { initResultsPage } from "./pages/results";
 const BASE_PATH = "/desafio-m5";
 const route = [{
-   path: /\/desafio-m5\/welcome/,
+   path: /\/welcome/,
    action: initHomePage,
 },
 {
-   path: /\/desafio-m5\/instructions/,
+   path: /\/instructions/,
    action: initInstructionsPage,
 },
 {
-   path: /\/desafio-m5\/play/,
+   path: /\/play/,
    action: initGamePage,
 },
 {
-   path: /\/desafio-m5\/results/,
+   path: /\/results/,
    action: initResultsPage,
 }
 ];
@@ -35,8 +35,10 @@ export function initRouter(container: Element) {
       handleRoute(completePath)
    }
    function handleRoute(routes) {
+
+      const newRoute = isGithubPages() ? routes.replace(BASE_PATH, "") : routes;
       for (const r of route) {
-         if (r.path.test(routes)) {
+         if (r.path.test(newRoute)) {
 
             const el = r.action({ goTo: goTo });
             if (container.firstChild) {
